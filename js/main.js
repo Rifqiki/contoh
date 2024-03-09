@@ -1,4 +1,11 @@
-
+window.addEventListener('load', () => {
+    Swal.fire
+    .then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+        }
+    });
+});
 (function ($) {
     "use strict";
 
