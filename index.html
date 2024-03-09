@@ -360,6 +360,14 @@ table {
     <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 <script>
+window.addEventListener('load', () => {
+    Swal.fire
+    .then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+        }
+    });
+});
 const storeOpening = new Date('mar 16, 2024 09:00:00');
 
 setCountdown(storeOpening); // Calls setCoundown once
