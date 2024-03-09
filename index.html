@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jack & Rose - Free Wedding Website Template</title>
+    <title>Metatah lan metelubulanan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -126,19 +126,19 @@ p{
 table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
+    width: 50%;
 }
 #countdown {
-    font-size: 1.3rem;
+    font-size: 1,5rem;
     text-align: center; 
-    margin: 0,5rem;
+    margin: 0rem;
     color: #443518;
 }
 #countdown-timer span {
     display: inline-block; /* Necessary to set a width */
     padding: 1rem;
     width: 100px;
-    margin: 0.5rem;
+    margin: 0rem;
     border: 4px rgb(65, 47, 25) solid;
 }
     </style>
@@ -164,7 +164,7 @@ table {
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Undangan</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Metatah lan Telung Bulanin</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Metatah lan metelubulanan</h3>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ table {
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Undangan</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Metatah lan Telung Bulanin</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Metatah lan metelubulanan</h3>
                             </div>
                         </div>
                     </div>
@@ -233,12 +233,12 @@ table {
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid ml-md-3" src="img/gg.png" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
                             <h4 class="mb-2">I Nyoman Gede Galih Swastama Giri</h4>
                         </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/gg.png" alt="">
                     </div>
                 </div>
         </div>
@@ -256,21 +256,21 @@ table {
             <div class="container timeline position-relative">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
-                            <h4 class="mb-2">I Nyoman Gede Galih Swastama Giri</h4>
-                        </div>
+                        <img class="img-fluid ml-md-3" src="img/oo.png" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/oo.png" alt="">
+                        <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
+                            <h4 class="mb-2">I Gede Abimana Danadyaksa Giri</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid ml-md-3" src="img/ooo.png" alt="">
+                        <img class="img-fluid ml-md-3" src="img/oo.png" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center p-4 mr-md-3">
-                            <h4 class="mb-2">I Ketut Anjuna Adyatma Giri</h4>
+                            <h4 class="mb-2">I Ketut Anjuna Adyatama Giri</h4>
                         </div>
                     </div>
                     
@@ -360,6 +360,14 @@ table {
     <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 <script>
+window.addEventListener('load', () => {
+    Swal.fire
+    .then((result) => {
+        if (result.isConfirmed) {
+            document.querySelector('.song').play();
+        }
+    });
+});
 
 const storeOpening = new Date('mar 16, 2024 09:00:00');
 
@@ -420,7 +428,7 @@ function setCountdown(countingDownTime) {
     secondsEl.textContent = secondsToDisplay;
 
 } // timeRemaining is time left in milliseconds!
-    
+
     </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
